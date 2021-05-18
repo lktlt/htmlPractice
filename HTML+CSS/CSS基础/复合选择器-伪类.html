@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* w未被访问过的链接*/
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 选择访问过的链接 */
+        a:visited {
+            color: orange;
+        }
+
+        /* 选择鼠标经过的链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 选择活动的，鼠标按钮下 */
+        a:active {
+            color: springgreen;
+        }
+
+        /* 实际开发中以下即可 */
+        /* a {
+            color:#333;
+        }
+        a:hover {
+            color: blue ;
+        } */
+
+        /* input 类的表单元素 */
+        input:focus {
+            background-color: pink;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+    <a href="#">表哥乔治</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>
