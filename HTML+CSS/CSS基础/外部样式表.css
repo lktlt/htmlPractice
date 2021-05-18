@@ -1,0 +1,37 @@
+body {
+    font: 16px/28px 'microsoft yaei';
+}
+div {
+    color: #666;
+    /* #666666 #666 */
+    /* #ff00ff #f0f */
+    font-size: 12px;
+}
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+p {
+    text-indent: 2em;
+    align-content: center;
+}
+img {
+    align-self: center;
+    width: 800;
+}
+a {
+    text-decoration: none;
+}
+.centerTxt{
+    text-align: center;
+}
+
+.button {
+    font-weight: 700;
+}
+.search {
+  width: 170px;
+}
+.pic {
+    text-align: center;
+}
