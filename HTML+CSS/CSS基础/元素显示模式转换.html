@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 把行内元素转换为块级元素 */
+        a {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: block;
+        }
+
+        /* 块->行内 width height无效 */
+        div {
+            background-color: purple;
+            width: 500px;
+            display: inline;
+        }
+
+        span {
+            width: 100px;
+            height: 30px;
+            background-color: seagreen;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">1234</a>
+    <div>12345</div>
+    <span>123456</span>
+    <span>1234567</span>
+</body>
+
+</html>
