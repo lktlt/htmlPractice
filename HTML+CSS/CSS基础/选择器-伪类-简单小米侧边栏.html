@@ -8,13 +8,17 @@
     <title>Document</title>
     <style>
         a {
+            display: block;
             width: 230px;
-            height: 40px;
             color: white;
             text-indent: 2em;
             text-decoration: none;
             background-color: #55585a;
-            display: block;
+            /* height盒子高度 ling-height由上下空隙和文字三部分组成 */
+            /* 行高放到盒子里去 */
+            /* 行高=盒子高度，垂直居中 */
+            height: 40px;
+            line-height: 70px;
         }
 
         a:hover {
