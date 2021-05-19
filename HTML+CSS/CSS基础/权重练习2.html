@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 权重0,0,1,1 */
+        .nav li {
+            color: red;
+        }
+
+        /* 将第一个li变为粉色的方法，或者直接给ID选择器？行内？！important？*/
+        /* 权重0010+0010=0020  */
+        /* 尽量使用完整的复合选择器保证权重叠加，避免低权重丢失样式 */
+        .nav .pink {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+        <li>123</li>
+    </ul>
+</body>
+
+</html>
