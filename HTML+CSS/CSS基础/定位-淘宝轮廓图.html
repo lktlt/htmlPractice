@@ -10,6 +10,8 @@
         * {
             margin: 0;
             padding: 0;
+            list-style: none;
+
         }
 
         .tb-promo {
@@ -29,14 +31,56 @@
             text-decoration: none;
         }
 
-        .prev {
+        /* 并集选择器合并相同的属性 */
+        .prev,
+        .next {
             /* 箭头会压住盒子，用定位来做，只能用绝对定位，压住其他盒子 */
             position: absolute;
-            top: 0;
-            left: 0;
+            /* 绝对定位垂直居中 */
+            top: 50%;
+            margin-top: -15px;
             width: 20px;
             height: 30px;
             background-color: rgba(0, 0, 0, .3);
+            color: white;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            color: white;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 6.5px;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+        .promo-nav .selected {
+            background-color: orange;
+
         }
     </style>
 </head>
@@ -45,6 +89,15 @@
     <div class="tb-promo">
         <img src="images/tb.jpg" alt="">
         <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <!-- 小圆点 -->
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </body>
 
